@@ -1,61 +1,32 @@
-# Change Blazor File Manager content for the different users
+# Blazor File Manager - Dynamic Content Loading
 
-**Repository Description**  
-This repository contains a **Blazor sample application** that demonstrates how to **change the content displayed in the Syncfusion Blazor File Manager for different users**.
-
-The project provides a quick getting‑started setup where the File Manager content can vary based on user context, enabling user‑specific file views within a Blazor application.
-
-## Project Overview
-The purpose of this project is to help developers understand how to configure the Syncfusion **Blazor File Manager** so that different users see different file content. This is useful for scenarios that require per‑user file access, role‑based views, or customized content presentation.
+This quick start Blazor project demonstrates how to render the [Blazor File Manager](https://www.syncfusion.com/blazor-components/blazor-file-manager) component and change its displayed content dynamically. It is built as a standalone Blazor WebAssembly App on **.NET 10**, following the [Getting Started with WASM App UG](https://help.syncfusion.com/file-manager-sdk/blazor/getting-started-with-wasm-app).
 
 ## Features
-- Integration of **Syncfusion Blazor File Manager**
-- Display different file content for different users
-- User‑specific file browsing experience
-- Simple Blazor application setup
-- Clean and extendable project structure
+
+* **Blazor File Manager**: Full-featured file manager component with read, delete, copy, move, rename, search, upload, download, and image preview operations
+* **User Selection**: A DropDownList to switch the user context and change the File Manager content accordingly
+* **Standalone WASM**: Runs entirely in the browser using the Syncfusion hosted file service provider
 
 ## Prerequisites
-Ensure the following requirements are met before running this project:
-- Visual Studio 2022  
-- .NET SDK compatible with Blazor  
-- Syncfusion Blazor packages
-- Valid Syncfusion license key (if required)
 
-## Installation
-1. Clone the Repository
-Clone or download the repository to your local machine:
-```bash
-git clone https://github.com/SyncfusionExamples/Blazor-File-Manager-Dynamic-Content-Loading.git
-```
-2. Open the solution file using Visual Studio 2022.
-3. Restore the NuGet packages by rebuilding the solution.
-4. Run the project.
-5. Once the application starts, the Blazor File Manager displays content based on the currently configured user logic.
+* Visual Studio 2022 or Visual Studio Code (with C# Dev Kit)
+* .NET 10.0 SDK
+* Valid Syncfusion license key (if required)
 
-## Configuration
-The logic for displaying different content per user is implemented within the Blazor application. You can extend this logic to:
-- Load user‑specific files
-- Apply role‑based access rules
-- Customize File Manager behavior per user
+## How to run the project
+
+1. Checkout this project to your local machine
+2. Restore the NuGet packages
+3. Run the project - the Blazor File Manager renders in your default web browser
 
 ## Documentation
-- General Syncfusion documentation:
-https://help.syncfusion.com/
-- Blazor Introduction:
-https://blazor.syncfusion.com/documentation/introduction
-- Blazor File Manager – Getting Started:
-https://blazor.syncfusion.com/documentation/file-manager/getting-started-with-web-app
 
-## Additional Resources
-- Syncfusion Blazor File Manager product overview:
-https://www.syncfusion.com/blazor-components/blazor-file-manager
-
-## Troubleshooting
-- Ensure NuGet packages are restored successfully.
-- Verify that the Syncfusion license key is registered.
-- Rebuild the solution if changes are not reflected.
-- Check application logs for runtime errors.
+* Blazor File Manager – Getting Started with WebAssembly App:
+https://help.syncfusion.com/file-manager-sdk/blazor/getting-started-with-wasm-app
+* General Syncfusion documentation: https://help.syncfusion.com/
+* Blazor Introduction: https://blazor.syncfusion.com/documentation/introduction
 
 ## Support
-For detailed API references, user‑specific configuration guidance, and advanced Blazor File Manager scenarios, refer to the Syncfusion Blazor documentation links provided above.
+
+For detailed API references and advanced Blazor File Manager scenarios, refer to the Syncfusion Blazor documentation links provided above.
