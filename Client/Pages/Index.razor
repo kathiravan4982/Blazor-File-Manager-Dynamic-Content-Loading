@@ -1,4 +1,4 @@
-﻿@page "/"
+@page "/"
 
 @using Syncfusion.Blazor.FileManager
 @using Syncfusion.Blazor.DropDowns
@@ -8,8 +8,6 @@
 
 @inject HttpClient Http
 @inject NavigationManager uriHelper;
-
-<PageTitle>Home</PageTitle>
 
 <span>Signed in: </span>
 <SfDropDownList TValue="int" TItem="User" Placeholder="Select a User" DataSource="@LocalData" Width="200px" @bind-Value="@DropVal">
