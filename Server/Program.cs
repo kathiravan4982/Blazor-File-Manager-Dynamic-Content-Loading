@@ -11,6 +11,10 @@ builder.Services.AddSession(options =>
     options.Cookie.IsEssential = true;
 });
 builder.Services.AddControllersWithViews();
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("AllowAllOrigins", builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
+});
 builder.Services.AddRazorPages();
 
 var app = builder.Build();
@@ -18,7 +22,6 @@ var app = builder.Build();
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
-    app.UseDeveloperExceptionPage();
     app.UseWebAssemblyDebugging();
 }
 else
@@ -34,8 +37,9 @@ app.UseBlazorFrameworkFiles();
 app.UseStaticFiles();
 
 app.UseRouting();
+app.UseCors("AllowAllOrigins");
 app.UseSession();
-app.UseCors();
+
 app.MapRazorPages();
 app.MapControllers();
 app.MapFallbackToFile("index.html");

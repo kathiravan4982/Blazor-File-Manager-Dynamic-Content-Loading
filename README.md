@@ -17,9 +17,10 @@ The purpose of this project is to help developers understand how to configure th
 
 ## Prerequisites
 Ensure the following requirements are met before running this project:
-- Visual Studio 2022  
-- .NET SDK compatible with Blazor  
-- Syncfusion Blazor packages
+- Visual Studio 2022 (or Visual Studio Code with the C# Dev Kit)
+- .NET 10.0 SDK
+- Syncfusion Blazor packages (v35.1.42)
+- SQL Server LocalDB (for the user database used by this sample)
 - Valid Syncfusion license key (if required)
 
 ## Installation
@@ -44,8 +45,8 @@ The logic for displaying different content per user is implemented within the Bl
 https://help.syncfusion.com/
 - Blazor Introduction:
 https://blazor.syncfusion.com/documentation/introduction
-- Blazor File Manager – Getting Started:
-https://blazor.syncfusion.com/documentation/file-manager/getting-started-with-web-app
+- Blazor File Manager – Getting Started with WebAssembly App:
+https://help.syncfusion.com/file-manager-sdk/blazor/getting-started-with-wasm-app
 
 ## Additional Resources
 - Syncfusion Blazor File Manager product overview:
